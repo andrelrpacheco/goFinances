@@ -22,11 +22,10 @@ import { InputForm } from '../../components/Form/InputForm'
 import { TransactionTypeButton } from '../../components/Form/TransactionTypeButton'
 import { CategorySelect } from '../../components/Form/CategorySelect'
 import { CategoryList } from '../CategoryList'
+import { HeaderComponent } from '../../components/Header'
 
 import {
 	Container,
-	Header,
-	Title,
 	Form,
 	Fields,
 	TransactionTypeContainer
@@ -118,10 +117,7 @@ export function Register() {
 	return (
 		<TouchableWithoutFeedback onPress={Keyboard.dismiss}>
 			<Container>
-				<Header>
-					<Title>Cadastro</Title>
-				</Header>
-
+				<HeaderComponent title='Cadastro' />
 				<Form>
 					<Fields>
 						<InputForm

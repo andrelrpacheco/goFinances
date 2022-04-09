@@ -2,6 +2,7 @@ import React from 'react'
 import { FlatList } from 'react-native'
 import { categories } from '../../utils/categories'
 import { Button } from '../../components/Form/Button'
+import { HeaderComponent } from '../../components/Header'
 
 import {
 	Container,
@@ -37,9 +38,7 @@ export function CategoryList({
 
 	return (
 		<Container>
-			<Header>
-				<Title>Categoria</Title>
-			</Header>
+			<HeaderComponent title='Categoria' />
 
 			<FlatList
 				data={categories}
