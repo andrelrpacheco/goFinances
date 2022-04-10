@@ -25,12 +25,6 @@ export const Title = styled.Text`
 	color: ${({ theme }) => theme.colors.title};
 `
 
-export const DollarSign = styled.Text`
-	font-size: ${RFValue(15)}px;
-	font-family: 'Poppins-Medium';
-	color: ${({ theme }) => theme.colors.title};
-`
-
 export const Amount = styled.Text`
 	font-size: ${RFValue(15)}px;
 	font-family: 'Poppins-Bold';

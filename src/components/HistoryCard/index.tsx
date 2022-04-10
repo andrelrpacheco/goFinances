@@ -2,11 +2,9 @@ import React from 'react'
 
 import {
 	Container,
-	DollarSign,
 	Title,
 	Amount,
 } from './styles'
-
 interface HistoryCardProps {
 	title: string;
 	amount: string;
@@ -17,10 +15,7 @@ export function HistoryCard({ title, amount, color }: HistoryCardProps) {
 	return (
 		<Container color={color}>
 			<Title>{title}</Title>
-			<Amount>
-				<DollarSign>R$</DollarSign>
-				{amount}
-			</Amount>
+			<Amount>{amount}</Amount>
 		</Container>
 	)
 }
